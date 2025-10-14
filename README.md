@@ -10,9 +10,9 @@ Denna uppgift syftar till att testa din förmåga att självständigt genomföra
 
 #### Mitt arbete handlar om Pingviner där jag skapat en modell som räknar ut art beroende på näbb längd, fen längd och kroppsvikt.
 
-|COMMAND|OPERATION|ENPOINT|
+| COMMAND | OPERATION | ENPOINT |
 |--------------|
-|POST|Skapa en pingvin och får tillbaka svar om art|/penguins|
+| POST | Skapa en pingvin och får tillbaka svar om art | /penguins |
 
 ````json
 {
@@ -21,4 +21,3 @@ Denna uppgift syftar till att testa din förmåga att självständigt genomföra
     "body_mass_g": 4000
 
 }
-´´´´
