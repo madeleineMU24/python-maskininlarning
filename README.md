@@ -2,7 +2,7 @@
 
 ### Uppgift:
 Maskininlärningsprojekt från Data till Web-API
-Denna uppgift syftar till att testa din förmåga att självständigt genomföra ett komplett maskininlärningsprojekt, från dataanalys och modellträning till driftsättning via ett webb-API. Du ska demonstrera färdigheter i Python, datahantering, modellering och grundläggande webbtjänstutveckling.
+Denna uppgift syftar till att testa din förmåga att självständigt genomföra ett komplett maskininlärningsprojekt, från dataanalys och modellträning till driftsättning via ett webb-API. Du ska demonstrera färdigheter i Python, datahantering, modellering och grundläggande webbtjänstutveckling
 
 ---
 ### Projekt
@@ -16,13 +16,12 @@ Mitt projekt använder maskininlärning för att förutsäga vilken art en pingv
     "bill_length_mm": 46,
     "flipper_length_mm": 190,
     "body_mass_g": 4000
-
 }
 ````
 
 | COMMAND | OPERATION | ENDPOINT |
 |---|---|---|
-| POST | Skapa en pingvin och får tillbaka svar om art | /penguins |
+| POST | Skicka in värden för att se vilken art det är | /penguins |
 
 ---
 
@@ -34,3 +33,24 @@ En lat hund för att lättare testa dom olika pingvinerna
 | Gentoo | 47 - 52 mm| 205 - 220 mm| 4500 - 5500 g|
 | Chinstrap |46 - 50 mm| 180 - 200 mm | 3300 - 4000 g|
 | Adelie | 36 - 39 mm| 180 - 200 mm| 3700 - 4500 g|
+
+---
+### Användning
+För att kunna prova modellen måste du först logga in. Det finns en hårdkodad test användare man kan använda för att prova på
+
+|COMMAND|OPERATION|ENDPOINT|
+|---|---|---|
+|POST|Skapa en inloggnings nyckel|/penguins/login|
+
+```json
+{
+    "username" : "test-user",
+    "password" : "password1"
+}
+````
+Det behövs också att man installerar:
+- joblib
+- numpy
+- pandas
+- flask
+- flask_jwt_extended
